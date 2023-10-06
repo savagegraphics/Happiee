@@ -4,43 +4,45 @@ type Props = {}
 
 const FaqGrid = (props: Props) => {
   return (
-<div className="flex">
-<dl className="mt-8 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8">
-<div className="flex flex-col w-full divide-y sm:flex-row sm:divide-y-0 sm:px-8 lg:px-12 xl:px-32 divide-[#9e9c9c]">
-			<div className="flex flex-col lg:w-full w-[50%] lg:ml-0 ml-8 divide-y divide-[#9e9c9c]">
-				<div rel="noopener noreferrer" className="items-center justify-center pr-6 sm:py-8 lg:py-2">
-               <h1 className='text-[#666565] text-xs font-thin font-Aeonik'>Product</h1>
-                <span className='text-[#3A3A3A] text-base font-medium font-Aeonik whitespace-nowrap'>Camera</span>
-                </div>
-                <div rel="noopener noreferrer" className="items-center justify-center pr-6 sm:py-8 lg:py-2">
-                <h1 className='text-[#666565] text-xs font-thin font-Aeonik'>Weight</h1>
-                <span className='text-[#3A3A3A] text-base font-medium font-Aeonik whitespace-nowrap'>8kg</span>
-                </div>
+<section className="">
+	<div className="container flex flex-col items-center p-4 mx-auto md:p-8">
+		<div className="flex flex-col w-full divide-y sm:flex-row sm:divide-y-0 sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+			<div className="flex flex-col w-full divide-y divide-gray-700">
+				<a rel="noopener noreferrer" href="#" className="items-center justify-center p-4 sm:py-8 lg:py-4">
+                   <p className='text-gray-400 text-xs'>Product</p>
+                   <p className='text-sm'>Camera</p>
+                    </a>
+                    <a rel="noopener noreferrer" href="#" className="items-center justify-center p-4 sm:py-8 lg:py-4">
+                   <p className='text-gray-400 text-xs'>Weight</p>
+                   <p className='text-sm'>8kg</p>
+                    </a>		
+        	</div>
+			<div className="flex flex-col w-full divide-y divide-gray-700">
+            <a rel="noopener noreferrer" href="#" className="items-center justify-center p-4 sm:py-8 lg:py-4">
+                   <p className='text-gray-400 text-xs'>From</p>
+                   <p className='text-sm'>Lagos, Nigeria</p>
+                    </a>
+                    <a rel="noopener noreferrer" href="#" className="items-center justify-center p-4 sm:py-8 lg:py-4">
+                   <p className='text-gray-400 text-xs'>Price</p>
+                   <p className='text-sm'>N80, 000</p>
+                    </a>
     			</div>
-			<div className="flex flex-col lg:w-full w-[50%] lg:ml-0 ml-8 divide-y divide-[#9e9c9c]">
-            <div rel="noopener noreferrer" className="items-center justify-center pr-6 sm:py-8 lg:py-2 mr-8">
-            <h1 className='text-[#666565] text-xs font-thin font-Aeonik'>From</h1>
-            <span className='text-[#3A3A3A] text-base font-medium font-Aeonik whitespace-nowrap mr-2'>Lagos, Nigeria</span>
-                </div>
-                <div rel="noopener noreferrer" className="items-center justify-center pr-6 sm:py-8 lg:py-2">
-                <h1 className='text-[#666565] text-xs font-thin font-Aeonik'>Price</h1>
-                <span className='text-[#3A3A3A] text-base font-medium font-Aeonik whitespace-nowrap'>N80,000</span>
-                </div>
-    			</div>
-			<div className="lg:w-[100%] w-[50%] lg:ml-0 ml-8 divide-y sm:flex-col sm:flex divide-[#9e9c9c]">
-            <div rel="noopener noreferrer" className="items-center justify-center pr-6 sm:py-8 lg:py-2">
-            <h1 className='text-[#666565] text-xs font-thin font-Aeonik ml-8'>To</h1>
-            <span className='text-[#3A3A3A] text-base font-medium font-Aeonik whitespace-nowrap ml-0 lg:ml-8'>Ontario, Canada</span>
-                </div>
-                <div rel="noopener noreferrer" className="items-center justify-center pr-6 sm:py-8 lg:py-2">
-                <h1 className='text-[#666565] text-xs font-thin font-Aeonik whitespace-nowrap'>Ordered Date</h1>
-                <span className='text-[#3A3A3A] text-base font-medium font-Aeonik whitespace-nowrap'>Camera</span>
-                </div>
-    			</div>
+			<div className="flex flex-col w-full divide-y sm:flex-col sm:flex divide-gray-700">
+            <a rel="noopener noreferrer" href="#" className="lg:whitespace-nowrap items-center justify-center p-4 sm:py-8 lg:py-4">
+                   <p className='text-gray-400 text-xs'>To</p>
+                   <p className='text-sm'>Ontario, Canada</p>
+                    </a>
+                    <a rel="noopener noreferrer" href="#" className="lg:whitespace-nowrap items-center justify-center p-4 sm:py-8 lg:py-4">
+                   <p className='text-gray-400 text-xs'>Ordered Date</p>
+                   <p className='text-sm'>12 January 2023</p>
+                    </a>
+			</div>
 		</div>
-		</dl>
-</div>
+	</div>
+</section>
   )
 }
 
 export default FaqGrid
+
+

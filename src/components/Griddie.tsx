@@ -8,28 +8,24 @@ const Four = (props: Props) => {
             <div className="grid gap-10 lg:grid-cols-3 md:grid-cols-2">
                 <div className="flex flex-col items-end px-3">
                 <div className="px-3">
-                className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-
+ t
                 </div>
              
                 </div>
                 <div className="flex flex-col items-end px-3">
                 <div className="px-3">
-                className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-
+ t
                 </div>
              
                 </div>
                 <div className="flex flex-col items-end px-3">
                 <div className="px-3">
-                className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-
+ t
                 </div>
              
                 </div>
                 <div className="px-3">
-                className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-
+ t
                 </div>
               </div>
           </div>

@@ -1,30 +1,31 @@
 import type { Config } from 'tailwindcss'
 
-const withMT = require("@material-tailwind/react/utils/withMT");
+const withMT = require('@material-tailwind/react/utils/withMT')
 
 const config: Config = withMT({
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    "./node_modules/flowbite-react/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
- 
+    './node_modules/flowbite-react/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}',
+    'node_modules/preline/dist/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
+      }
+    }
   },
   plugins: [
-    require("flowbite/plugin"),
+    require('flowbite/plugin'),
     require('@tailwindcss/forms'),
-    require("daisyui"),
-  ],
-});
+    require('daisyui'),
+    require('preline/plugin')
+  ]
+})
 export default config

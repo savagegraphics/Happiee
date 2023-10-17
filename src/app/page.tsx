@@ -1,14 +1,13 @@
-import React from 'react'
-import GridCard from '@/components/GridCard'
-import Griddie from '@/components/Griddie'
+'use client;'
 import Dashboard from './Dashboard/page'
+import React from 'react'
 
 type Props = {}
 
 const page = (props: Props) => {
   return (
     <div>
-<Dashboard/>
+      <Dashboard />
     </div>
   )
 }

@@ -4,7 +4,9 @@ type Props = {}
 
 const page = (props: Props) => {
   return (
-    <div>page</div>
+    <div className=''>
+      <div className='Rectangle888 w-96 h-32 opacity-30 bg-slate-100 rounded-2xl' />
+    </div>
   )
 }
 

@@ -1,22 +1,22 @@
 import React from 'react'
-import { CustomStepper } from './Step'
+import Cards from './Cards'
+import SingleCard from './SingleCard'
+import Progress from './Progress'
 
 type Props = {}
 
-const TwoGrid = (props: Props) => {
+const Grid = (props: Props) => {
   return (
-<div className="flex flex-col w-full lg:flex-row mt-6">
-  <div className="grid flex-grow lg:mr-2 mb-4 h-[150px] lg:w-[260px] w-full rounded-lg bg-white">
-    <h1 className="p-3 text-lg">
-        Tracking
-        <hr className='border-[#3A3A3A]'/>
-    </h1>
-    </div> 
-  <div className="grid flex-grow lg:ml-2 mb-4 h-[150px] lg:w-[160px] w-full rounded-lg bg-white">
-    Departure Date
+    <div className='lg:flex lg:-mx-6'>
+      <div className='lg:w-4/6 lg:px-6'>
+        <Progress />
+      </div>
+
+      <div className='mt-8 lg:w-2/6 lg:mt-0 lg:mr-4 bg-slate-300 rounded-lg'>
+        <SingleCard />
+      </div>
     </div>
-</div>     
   )
 }
 
-export default TwoGrid
+export default Grid

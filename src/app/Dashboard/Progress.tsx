@@ -5,7 +5,7 @@ type Props = {}
 
 const Progress = (props: Props) => {
   return (
-    <section className='mx-2 my-6 lg:w-[389px] lg:h-[150px] w-[329px] h-[120px]  rounded-lg bg-white'>
+    <section className='mx-2 my-6 lg:w-[389px] lg:h-[150px] w-[329px] h-[150px]  rounded-lg bg-white'>
       <div className='pt-6'>
         <div className='tracking'>
           <div className='title'>Tracking </div>
